@@ -6,6 +6,7 @@
   }
 }
 
+//滚动条
 @mixin scrollBar {
   &::-webkit-scrollbar-track-piece {
     background: #d3dce6;
@@ -20,19 +21,21 @@
     border-radius: 20px;
   }
 }
-
+//相对定位
 @mixin relative {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
+//设定宽度，居中
 @mixin pct($pct) {
   width: #{$pct};
   position: relative;
   margin: 0 auto;
 }
 
+//三角形
 @mixin triangle($width, $height, $color, $direction) {
   $width: $width/2;
   $color-border-style: $height solid $color;
